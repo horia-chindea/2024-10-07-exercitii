@@ -108,12 +108,13 @@ console.log(calculateAverage(myArray));
  * care primește un șir și returnează șirul cu toate 
  * literele transformate în majusculă.
  */
+function transformToUppercase(string1){
+    return string1.toUpperCase();
+}
+console.log(transformToUppercase("lorem ipsum"));
 
 /**
  * Verificarea Numărului Prim:
  * Scrie o funcție numită isPrimeNumber care primește un număr 
  * și returnează true dacă este prim și false în caz contrar.
  */
-
-  
-
