@@ -22,8 +22,8 @@ function isEven(myNumber){
     }
     return false;
 }
-console.log(isEven(12));
-console.log(isEven(13));
+console.log("Numarul 12 este par?", isEven(12));
+console.log("Numarul 13 este par?", isEven(13));
 
 function isOdd(checkedNumber){
     let oddNumber = true;
@@ -32,8 +32,8 @@ function isOdd(checkedNumber){
     }
     return oddNumber;
 }
-console.log(isOdd(12));
-console.log(isOdd(13));
+console.log("Numarul 12 este impar?", isOdd(12));
+console.log("Numarul 13 este impar?", isOdd(13));
 
 /**
  * Concatenarea Șirurilor de caractere:
@@ -43,7 +43,7 @@ console.log(isOdd(13));
 function concatenateStrings(string1, string2){
     return string1 + string2;
 }
-console.log(concatenateStrings("ala", "bala"));
+console.log("Cele doua stringuri concatenate:", concatenateStrings("ala", "bala"));
 
 /**
  * Verificarea Palindromului:
@@ -57,9 +57,9 @@ function isPalindrome(text){
     }
     return text === reversedText;
 }
-console.log(isPalindrome("ABA"));
-console.log(isPalindrome("ABCA"));
-console.log(isPalindrome("epurasuusarupe"));
+console.log("ABA este parindrom?", isPalindrome("ABA"));
+console.log("ABCA este palinfrom?", isPalindrome("ABCA"));
+console.log("epurasuusarupe este palindrom?", isPalindrome("epurasuusarupe"));
 
 /**
  * Generarea unui Număr Aleatoriu:
@@ -70,7 +70,7 @@ function generateRandomNumber(){
     let x = Math.floor((Math.random() * 100) + 1);
     return x;
 }
-console.log(generateRandomNumber());
+console.log("Numar aleatoriu generat:", generateRandomNumber());
 
 /**
  * Calcularea Puterii:
@@ -84,7 +84,7 @@ console.log(generateRandomNumber());
 function raiseToPower(x, y){
     return Math.pow(x, y);
 }
-console.log(raiseToPower(5, 3));
+console.log("5 la puterea a 3-a este:", raiseToPower(5, 3));
 
 /**
  * Calcularea Mediei:
@@ -100,7 +100,7 @@ function calculateAverage(myArray){
     return average;
 }
 let myArray = new Array(5,12,46);
-console.log(calculateAverage(myArray));
+console.log("Media numerelor din array este:", calculateAverage(myArray));
 
 /**
  * Transformarea în Majusculă:
@@ -111,28 +111,24 @@ console.log(calculateAverage(myArray));
 function transformToUppercase(string1){
     return string1.toUpperCase();
 }
-console.log(transformToUppercase("lorem ipsum"));
+console.log("Sirul cu majuscule:", transformToUppercase("lorem ipsum"));
 
 /**
  * Verificarea Numărului Prim:
  * Scrie o funcție numită isPrimeNumber care primește un număr 
  * și returnează true dacă este prim și false în caz contrar.
  */
-// program to check if a number is prime or not
-
-// take input from the user
-const number = parseInt(prompt("Enter a positive number: "));
+// cere imput de la user:
+const number = parseInt(prompt("Introdu un numar pozitiv: "));
 let isPrime = true;
 
-// check if number is equal to 1
+// verifica daca numarul este egal cu 1
 if (number === 1) {
-    console.log("1 is neither prime nor composite number.");
+    console.log("1 nu este nici numar prim, nici numar compus.");
 }
 
-// check if number is greater than 1
+// verifica daca numarul este mai mare decat 1
 else if (number > 1) {
-
-    // looping through 2 to number/2
     for (let i = 2; i <= number/2; i++) {
         if (number % i == 0) {
             isPrime = false;
@@ -141,13 +137,12 @@ else if (number > 1) {
     }
 
     if (isPrime) {
-        console.log(`${number} is a prime number`);
+        console.log(`${number} este un numar prim`);
     } else {
-        console.log(`${number} is a not prime number`);
+        console.log(`${number} nu este un numar prim`);
     }
 }
-
-// check if number is less than 1
+// daca numarul este mai mic decat 1
 else {
-    console.log("The number is not a prime number.");
+    console.log("Numarul introdus nu este un numar prim.");
 }
