@@ -50,6 +50,16 @@ console.log(concatenateStrings("ala", "bala"));
  * Defineste o funcție numită isPalindrome care primește un șir și
  *  returnează true dacă este palindrom și false în caz contrar.
  */
+function isPalindrome(text){
+    let reversedText = "";
+    for(const letter of text){
+        reversedText = letter + reversedText;
+    }
+    return text === reversedText;
+}
+console.log(isPalindrome("ABA"));
+console.log(isPalindrome("ABCA"));
+console.log(isPalindrome("epurasuusarupe"));
 
 /**
  * Generarea unui Număr Aleatoriu:
