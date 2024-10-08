@@ -77,6 +77,14 @@ console.log(generateRandomNumber());
  * Implementează o funcție numită raiseToPower care primește 
  * două numere (baza și exponentul) și returnează rezultatul ridicării la putere.
  */
+// function raiseToPower(x, y){
+//     return x ** y;
+// }
+// sau:
+function raiseToPower(x, y){
+    return Math.pow(x, y);
+}
+console.log(raiseToPower(5, 3));
 
 /**
  * Calcularea Mediei:
