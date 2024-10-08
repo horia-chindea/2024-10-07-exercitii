@@ -57,8 +57,8 @@ function isPalindrome(text){
     }
     return text === reversedText;
 }
-console.log("ABA este parindrom?", isPalindrome("ABA"));
-console.log("ABCA este palinfrom?", isPalindrome("ABCA"));
+console.log("ABA este palindrom?", isPalindrome("ABA"));
+console.log("ABCA este palindrom?", isPalindrome("ABCA"));
 console.log("epurasuusarupe este palindrom?", isPalindrome("epurasuusarupe"));
 
 /**
