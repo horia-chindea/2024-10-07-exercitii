@@ -91,6 +91,16 @@ console.log(raiseToPower(5, 3));
  * Creează o funcție numită calculateAverage care primește 
  * un array de numere și returnează media lor.
  */
+function calculateAverage(myArray){
+    let sum = 0;
+    for (let i=0; i<myArray.length; i++){
+        sum = sum + myArray[i];
+    }
+    let average = sum / myArray.length;
+    return average;
+}
+let myArray = new Array(5,12,46);
+console.log(calculateAverage(myArray));
 
 /**
  * Transformarea în Majusculă:
