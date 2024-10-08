@@ -16,16 +16,34 @@ console.log("Suma este:",computeSum(5, 2));
  * Scrie o funcție numită isEven care primește un număr 
  * și returnează true dacă numărul este par și false dacă este impar
  */
-function isEven(a){
-
-    
+function isEven(myNumber){
+    if(myNumber % 2 === 0){
+        return true;
+    }
+    return false;
 }
+console.log(isEven(12));
+console.log(isEven(13));
+
+function isOdd(checkedNumber){
+    let oddNumber = true;
+    if(checkedNumber % 2 ===0){
+        oddNumber = false;
+    }
+    return oddNumber;
+}
+console.log(isOdd(12));
+console.log(isOdd(13));
 
 /**
- * Concatenarea Șirurilor:
+ * Concatenarea Șirurilor de caractere:
  * Creează o funcție numită concatenateStrings care primește 
- * două șiruri și le concatenează, returnând rezultatul.
+ * două șiruri de caractere și le concatenează, returnând rezultatul.
  */
+function concatenateStrings(string1, string2){
+    return string1 + string2;
+}
+console.log(concatenateStrings("ala", "bala"));
 
 /**
  * Verificarea Palindromului:
