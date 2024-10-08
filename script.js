@@ -66,6 +66,11 @@ console.log(isPalindrome("epurasuusarupe"));
  * Scrie o funcție numită generateRandomNumber care 
  * returnează un număr aleatoriu întreg între 1 și 100.
  */
+function generateRandomNumber(){
+    let x = Math.floor((Math.random() * 100) + 1);
+    return x;
+}
+console.log(generateRandomNumber());
 
 /**
  * Calcularea Puterii:
